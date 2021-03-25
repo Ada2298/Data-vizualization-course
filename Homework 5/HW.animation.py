@@ -19,7 +19,6 @@ def test():
 	data = pd.read_sql_query(query, connection)
 	stat, p = shapiro(data)
 	stat = round(stat, 4)
-	p = round(p, 15)
 	return stat, p
 
 ### This method expects p-value from Shapiro_Wilk test and returns a formatted string
@@ -43,15 +42,10 @@ def animate(i):
 	x2 = data2.value
 	
 	gs = fig.add_gridspec(2, 3)
-	ax1.cla()
 	ax1 = fig.add_subplot(gs[0,0])
-	ax2.cla()
 	ax2 = fig.add_subplot(gs[0,1])
-	ax3.cla()
 	ax3 = fig.add_subplot(gs[1,0])
-	ax4.cla()
 	ax4 = fig.add_subplot(gs[1,1])
-	ax5.cla()
 	ax5 = fig.add_subplot(gs[0:,-1])
 
 	ax1.cla()
