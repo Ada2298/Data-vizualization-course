@@ -80,8 +80,6 @@ def animate(i):
 	query_p_value = ('SELECT p-value FROM p_values')
 	p_values_id = pd.read_sql_query(query_id, connection)
 	p_values_value = pd.read_sql_query(query_id, connection)
-	#roll_mean  = data.value
-	##  Imagine that here we have line plot, but something goes wrong with my code  :)) 
 	ax4.plot(p_values_id, p_values_value)
 	ax4.title.set_text("Distributison of p-values")
 
