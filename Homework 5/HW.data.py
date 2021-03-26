@@ -28,7 +28,7 @@ while True:
 	j += 1
 	for counter in range(0,7): 
 		i += 1
-		a = np.random.randint(1,6)
+		a = np.random.randint(1,7)
 		b += a
 		c.execute("INSERT INTO values_ values ({},{},{})".format(i,j,a))
 		#connection.commit()
