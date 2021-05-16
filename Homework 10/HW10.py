@@ -483,6 +483,7 @@ def survival_1(selected):
 					'showticklabels': False
 					},
 			autosize=False,
+			boxmode = 'group',
 			paper_bgcolor = colors['chart-background'],
 			plot_bgcolor = colors['chart-background'],
 			margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
